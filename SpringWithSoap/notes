@@ -1,0 +1,25 @@
+request
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:other="http://another.namespace.com/"
+                  xmlns:com="http://www.huawei.com/bss/soaif/interface/common/"
+	xmlns:fnf="http://www.huawei.com/bss/soaif/interface/FNFService/"
+                  >
+   <soapenv:Header/>
+   <soapenv:Body>
+    <!--Sould be first:-->
+    <web:getScoreRequest xmlns:web="http://soap.spring.example.com/">
+         <web:user>example</web:user>
+      </web:getScoreRequest>
+      
+     <fnf:QueryFNFNumReqMsg>
+			<fnf:AccessInfo>
+				<com:ObjectIdType>4</com:ObjectIdType>
+				<com:ObjectId>123456789</com:ObjectId>
+			</fnf:AccessInfo>
+			<!--Optional:-->
+			<fnf:FNFGroupId>1</fnf:FNFGroupId>
+		</fnf:QueryFNFNumReqMsg>
+        
+   </soapenv:Body>
+</soapenv:Envelope>
