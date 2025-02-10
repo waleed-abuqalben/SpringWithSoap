@@ -1,0 +1,21 @@
+<fnf:QueryFNFNumRspMsg
+	xmlns:fnf="http://www.huawei.com/bss/soaif/interface/FNFService/"
+	xmlns:com="http://www.huawei.com/bss/soaif/interface/common/">
+	<com:RspHeader>
+		<com:Version>1</com:Version>
+		<com:ReturnCode>0000</com:ReturnCode>
+		<com:ReturnMsg>Success.</com:ReturnMsg>
+		<com:RspTime>20201202145734</com:RspTime>
+	</com:RspHeader>
+	<fnf:FNFOffering>
+		<fnf:FNFOfferingId>
+			<com:OfferingId>9981</com:OfferingId>
+		</fnf:FNFOfferingId>
+		<fnf:FNFNumInfo>
+			<fnf:FNFNum>987654321</fnf:FNFNum>
+			<fnf:FNFGroupId>10000</fnf:FNFGroupId>
+			<fnf:FNFGroupName>friend</fnf:FNFGroupName>
+			<fnf:EffectiveDate>2008</fnf:EffectiveDate>
+		</fnf:FNFNumInfo>
+	</fnf:FNFOffering>
+</fnf:QueryFNFNumRspMsg>
